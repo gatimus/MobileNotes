@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 import java.io.File;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -165,7 +166,10 @@ public class Main extends ActionBarActivity {
 
     public void updateFileList(){
         Log.v(TAG, "updateFileList");
-        fileList = fao.listFiles();
+        //fileList = fao.listFiles();
+        Collection<File> refreshedFiles = fao.listFiles();
+        fileList.removeAll(refreshedFiles);
+        fileList.addAll(refreshedFiles);
         fileAdapter.notifyDataSetChanged();
         listView.invalidate();
     } //updateFileList
