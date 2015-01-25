@@ -8,7 +8,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
 
         <EditText
             android:layout_width="match_parent"
@@ -33,14 +35,28 @@
             android:nestedScrollingEnabled="true"
             android:textAlignment="textStart"
             android:gravity="start" />
+
     </LinearLayout>
 
-    <ListView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="@dimen/abc_search_view_preferred_width"
-        android:layout_height="match_parent"
         android:background="@android:color/darker_gray"
-        android:id="@+id/listView"
-        android:layout_gravity="start"
-        android:choiceMode="singleChoice" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/list"
+            android:choiceMode="singleChoice" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_list" />
+
+    </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>

@@ -30,7 +30,7 @@
         app:showAsAction="ifRoom"
         android:visible="true"
         android:enabled="true"/>
-
+<!--
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="4"
@@ -39,6 +39,7 @@
         app:showAsAction="never"
         android:visible="true"
         android:enabled="true"/>
+        -->
     <item
         android:id="@+id/action_about"
         android:orderInCategory="5"

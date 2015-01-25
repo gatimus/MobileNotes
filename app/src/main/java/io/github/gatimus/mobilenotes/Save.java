@@ -18,6 +18,7 @@ public class Save extends DialogFragment implements DialogInterface.OnClickListe
         super.onCreateDialog(savedInstanceState);
         builder = new Builder(getActivity());
         builder.setTitle(R.string.action_save);
+        builder.setIcon(android.R.drawable.ic_menu_save);
         builder.setMessage(R.string.msg_save);
         builder.setPositiveButton("Yes", this);
         builder.setNegativeButton("No", this);

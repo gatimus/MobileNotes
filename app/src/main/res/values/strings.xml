@@ -3,6 +3,8 @@
 
     <string name="app_name">MobileNotes</string>
 
+    <string name="empty_list">Save a note in the main screen.</string>
+
     <string name="action_search">Search</string>
     <string name="action_save">Save</string>
     <string name="action_delete">Delete</string>
@@ -11,20 +13,16 @@
     <string name="action_help">Help</string>
     <string name="action_quit">Quit</string>
 
-    <string name="msg_save">
-        Save note?
-    </string>
-    <string name="msg_delete">
-        Delete note?
-    </string>
+    <string name="msg_save">        Save note?</string>
+    <string name="msg_delete">        Delete note?</string>
     <string name="msg_about">
-        About body<!-- TODO -->
+        This app uses File IO to save, delete, and open notes.
     </string>
     <string name="msg_help">
-        Help body<!-- TODO -->
+        Type a title and save to get started. Slide from the left to see all your notes.
     </string>
 
-    <string name="title_activity_searchable">Search</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
