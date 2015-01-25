@@ -28,7 +28,7 @@ public class About extends DialogFragment implements DialogInterface.OnClickList
         builder.setTitle(R.string.action_about);
         builder.setIcon(android.R.drawable.ic_dialog_info);
         builder.setMessage(msg);
-        builder.setNeutralButton("Ok", this);
+        builder.setNeutralButton(R.string.ok, this);
         return builder.create();
     } //onCreateDialog
 

@@ -20,8 +20,8 @@ public class Delete extends DialogFragment implements DialogInterface.OnClickLis
         builder.setTitle(R.string.action_delete);
         builder.setIcon(android.R.drawable.ic_menu_delete);
         builder.setMessage(R.string.msg_delete);
-        builder.setPositiveButton("Yes", this);
-        builder.setNegativeButton("No", this);
+        builder.setPositiveButton(R.string.yes, this);
+        builder.setNegativeButton(R.string.no, this);
         return builder.create();
     } //onCreateDialog
 

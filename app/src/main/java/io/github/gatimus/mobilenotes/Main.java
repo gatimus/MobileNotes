@@ -100,7 +100,6 @@ public class Main extends ActionBarActivity {
             public void onDismiss() {
                 Log.v("SearchManager", "Dismiss");
                 drawerLayout.closeDrawers();
-                updateFileList();
             }
         });
         handleIntent(getIntent());

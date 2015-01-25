@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notas Móviles</string>
+    <string name="action_about">acerca de</string>
+    <string name="action_help">ayuda</string>
+    <string name="action_delete">borrar</string>
+    <string name="action_quit">dejar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_search">búsqueda</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="empty_list">Guardar una nota en la pantalla principal.</string>
+    <string name="msg_about">Esta aplicación utiliza File IO para guardar , borrar y abrir las notas .</string>
+    <string name="msg_delete">Eliminar nota?</string>
+    <string name="msg_help">Escriba un título y ahorrar para empezar. Deslice desde la izquierda para ver todas sus notas .</string>
+    <string name="msg_save">Guardar en cuenta ?</string>
+    <string name="navigation_drawer_close">Cierre el cajón de navegación</string>
+    <string name="navigation_drawer_open">Abra el cajón de navegación</string>
+    <string name="no">no</string>
+    <string name="yes">sí</string>
+    <string name="ok">OKAY</string>
+</resources>

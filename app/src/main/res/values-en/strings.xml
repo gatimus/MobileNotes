@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Mobile Notes</string>
 
     <string name="empty_list">Save a note in the main screen.</string>
@@ -13,6 +12,7 @@
     <string name="action_help">Help</string>
     <string name="action_quit">Quit</string>
 
+    <string name="msg_save">        Save note?</string>
     <string name="msg_delete">        Delete note?</string>
     <string name="msg_about">
         This app uses File IO to save, delete, and open notes.
@@ -23,9 +23,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="msg_save">Save note?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="ok">OK</string>
-
 </resources>

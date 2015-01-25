@@ -20,7 +20,7 @@ public class Help extends DialogFragment implements DialogInterface.OnClickListe
         builder.setTitle(R.string.action_help);
         builder.setIcon(android.R.drawable.ic_menu_help);
         builder.setMessage(R.string.msg_help);
-        builder.setNeutralButton("Ok", this);
+        builder.setNeutralButton(R.string.ok, this);
         return builder.create();
     } //onCreateDialog
 

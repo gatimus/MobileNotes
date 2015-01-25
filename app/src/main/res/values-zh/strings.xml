@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">手机注意事项</string>
+    <string name="action_about">大约</string>
+    <string name="action_delete">删除</string>
+    <string name="action_help">救命</string>
+    <string name="action_quit">退出</string>
+    <string name="action_save">保存</string>
+    <string name="action_search">搜索</string>
+    <string name="action_settings">设置</string>
+    <string name="empty_list">保存记在主屏幕上。</string>
+    <string name="msg_about">该应用程序使用文件IO来保存，删除，并打开笔记。</string>
+    <string name="msg_delete">删除注释</string>
+    <string name="msg_help">键入一个标题，并保存上手。从左侧的幻灯片看到所有的笔记。</string>
+    <string name="msg_save">保存笔记</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="navigation_drawer_open">打开抽屉式导航</string>
+    <string name="yes">是的</string>
+    <string name="no">没有</string>
+    <string name="ok">行</string>
+</resources>

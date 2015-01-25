@@ -20,8 +20,8 @@ public class Save extends DialogFragment implements DialogInterface.OnClickListe
         builder.setTitle(R.string.action_save);
         builder.setIcon(android.R.drawable.ic_menu_save);
         builder.setMessage(R.string.msg_save);
-        builder.setPositiveButton("Yes", this);
-        builder.setNegativeButton("No", this);
+        builder.setPositiveButton(R.string.yes, this);
+        builder.setNegativeButton(R.string.no, this);
         return builder.create();
     } //onCreateDialog
 

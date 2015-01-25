@@ -8,8 +8,8 @@ android {
         applicationId "io.github.gatimus.mobilenotes"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 1
-        versionName "Applejack"
+        versionCode 2
+        versionName "Berrypunch"
     }
     buildTypes {
         release {
