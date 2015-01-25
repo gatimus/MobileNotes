@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.app.AlertDialog.Builder;
 
-public class About extends DialogFragment {
+public class About extends DialogFragment implements DialogInterface.OnClickListener{
 
     private static final String TAG = "About";
     private Builder builder;
@@ -31,13 +31,26 @@ public class About extends DialogFragment {
         builder = new Builder(getActivity());
         builder.setTitle(R.string.action_about);
         builder.setMessage(msg);
-        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Log.i(TAG, "Ok");
-                dialog.dismiss();
-            } //onClick
-        });
+        builder.setNeutralButton("Ok", this);
         return builder.create();
     } //onCreateDialog
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        switch(which){
+            case DialogInterface.BUTTON_POSITIVE :
+                dialog.dismiss();
+                break;
+            case DialogInterface.BUTTON_NEGATIVE :
+                dialog.dismiss();
+                break;
+            case DialogInterface.BUTTON_NEUTRAL :
+                dialog.dismiss();
+                break;
+            default:
+                dialog.dismiss();
+                break;
+        }
+    } //onClick
 
 } //class

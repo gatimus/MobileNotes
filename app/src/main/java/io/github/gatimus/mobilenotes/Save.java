@@ -7,19 +7,20 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 
-public class Help extends DialogFragment implements DialogInterface.OnClickListener{
+public class Save extends DialogFragment implements DialogInterface.OnClickListener{
 
-    private static final String TAG = "Help";
+    private static final String TAG = "Save";
     private Builder builder;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        Log.i(TAG, "Create");
+        Log.v(TAG, "Create");
         super.onCreateDialog(savedInstanceState);
         builder = new Builder(getActivity());
-        builder.setTitle(R.string.action_help);
-        builder.setMessage(R.string.msg_help);
-        builder.setNeutralButton("Ok", this);
+        builder.setTitle(R.string.action_save);
+        builder.setMessage(R.string.msg_save);
+        builder.setPositiveButton("Yes", this);
+        builder.setNegativeButton("No", this);
         return builder.create();
     } //onCreateDialog
 
@@ -27,7 +28,7 @@ public class Help extends DialogFragment implements DialogInterface.OnClickListe
     public void onClick(DialogInterface dialog, int which) {
         switch(which){
             case DialogInterface.BUTTON_POSITIVE :
-                dialog.dismiss();
+                ((Main)getActivity()).saveNote();
                 break;
             case DialogInterface.BUTTON_NEGATIVE :
                 dialog.dismiss();
@@ -39,6 +40,6 @@ public class Help extends DialogFragment implements DialogInterface.OnClickListe
                 dialog.dismiss();
                 break;
         }
-    } //onClick
+    }
 
 } //class
